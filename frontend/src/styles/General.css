@@ -1,0 +1,228 @@
+/* #034159 #025951 #02735E #038C3E #0CF25D */
+body {
+    font-family: Roboto, Arial;
+    margin: 0;
+    padding: 0;
+    transition: padding 0.2s;
+    cursor: context-menu;
+    background-color: #034159;
+    color: white
+}
+
+.trigger {
+    position: relative;
+    padding: 20px 40px;
+    font-size: 24px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.smoke {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(12, 242, 93, 0.3);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: rise 3s forwards;
+    opacity: 0;
+}
+
+@keyframes rise {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+.home {
+    padding-top: 50px;
+    background-color: #025951;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* position: relative; */
+}
+
+.heading-section {
+    padding: 0;
+}
+
+.heading {
+    font-size: 72px;
+}
+
+.profile-image-section {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.projects {
+    position: relative;
+}
+
+.section-heading-container {
+    margin-left: 50px;
+    width: max-content;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: start;
+    /* transform: translateX(50%); */
+    /* transition: transform 2s; */
+}
+
+.projects-info {
+    position: absolute;
+    display: flex;
+    padding: 50px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+
+    display: grid;
+    --scrollbar-padding: 20px;
+    align-items: center;
+    padding: 20px;
+
+    --visible-cols: 1;
+    --col-gap: 50px;
+    --scrollbar-padding: 20px;
+
+    --col-size: calc((100% / var(--visible-cols) - var(--col-gap)/var(--visible-cols)));
+
+    grid-auto-flow: column;
+    grid-template-columns: var(--col-size);
+    grid-auto-columns: var(--col-size);
+    column-gap: var(--col-gap);
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: var(--scrollbar-padding);
+    opacity: 0;
+}
+
+div::-webkit-scrollbar {
+    display: none;
+}
+
+.project-info {
+    flex: 1;
+    text-align: center;
+}
+
+.project-title {
+    font-size: xx-large;
+}
+
+.project-gallery-image {
+    padding: 10px;
+    height: 70vh;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.section-heading-text {
+    font-size: 300px;
+    font-weight: 600;
+    color: white;
+}
+
+.skills-heading {
+    overflow: auto;
+}
+
+.skills-info {
+    display: grid;
+    --scrollbar-padding: 20px;
+    align-items: center;
+    padding: 20px;
+
+    --visible-cols: 2.8;
+    --col-gap: 50px;
+    --scrollbar-padding: 20px;
+
+    --col-size: calc((100% / var(--visible-cols) - var(--col-gap)/var(--visible-cols)));
+
+    grid-auto-flow: column;
+    grid-template-columns: var(--col-size);
+    grid-auto-columns: var(--col-size);
+    column-gap: var(--col-gap);
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: var(--scrollbar-padding);
+}
+
+.one-skill-section {
+    height: 400px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+}
+
+.skill-heading {
+    font-size: 40px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.skill-image-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.skill-image {
+    width: 360px;
+    object-fit: contain;
+    border-radius: 5%;
+}
+
+.follows {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.follow {
+    padding: 5px;
+}
+
+.footer {
+    height: 80px;
+}
+
+.foot {
+    margin-left: 2%;
+}
+
+.tabbutton2 {
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    font-weight: bold;
+    border-width: 0px;
+    height: auto;
+    width: auto;
+}
+
+.tabbutton2:hover {
+    /* background-color: rgb(10, 20, 50); */
+    color: aqua;
+    width: auto;
+}
+
+.copyright {
+    margin-right: 5%;
+    color: white;
+    font-size: medium;
+    text-align: right;
+}
