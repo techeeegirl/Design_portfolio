@@ -44,7 +44,7 @@ function App() {
             </a>
           </div>
           <div className="copyright">
-            Copyright&#169; 2024 Arnab Das. All rights reserved.
+            Copyright&#169; 2026 Nivedita Naskar. All rights reserved.
           </div>
         </div>
       </div>
