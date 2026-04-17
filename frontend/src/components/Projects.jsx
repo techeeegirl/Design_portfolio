@@ -50,8 +50,8 @@ export function Projects() {
           image_link={project2}
         />
         <Project
-          name="Calulator"
-          describe="A Basic Calculator using Javascript"
+          name="Website home page synchronicity season 2"
+          describe="A Basic home page using figma"
           image_link={project3}
         />
         <Project
@@ -60,8 +60,8 @@ export function Projects() {
           image_link={project4}
         />
         <Project
-          name="PTable"
-          describe="An interactive Periodic Table"
+          name="Museum"
+          describe="Meseum page using Figma"
           image_link={project5}
         />
       </div>
